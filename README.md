@@ -1,55 +1,25 @@
-# Chapter Conversion Tooling (Chapters only – no compile)
+# Chapter Conversion Tooling
 
-This repo contains starter scripts to convert your Markdown chapter files into **Chapter 1–styled EPUB-ready XHTML** and to preview them in a React canvas.
+This repository provides Node-based scripts to turn Markdown chapters into EPUB-ready XHTML and lightweight HTML canvases for preview.
 
-> You are **not** compiling the full EPUB yet (front/back matter pending). These tools only touch chapter internals.
+> These tools focus on chapter internals only; front and back matter are not yet included.
 
-## Install
-
-```bash
-npm init -y
-npm i markdown-it markdown-it-footnote js-yaml jsdom he fast-glob
-```
-
-## Layout (chapters only)
-
-```
-/OEBPS
-  /chapters_src/          # your Markdown inputs (.md with YAML)
-  /chapters/              # generated .xhtml
-  /styles/                # fonts.css, style.css
-  /images/                # brushstroke.JPEG, chapter-*.JPEG/PNG, etc.
-  book-map.yaml
-  project-structure.yaml
-/tools
-  md-to-xhtml.js
-  qa-checks.js
-  make-canvas.js
-```
-
-## Convert one chapter
+## Setup
 
 ```bash
-node tools/md-to-xhtml.js \
-  --in OEBPS/chapters_src/9-Chapter-I.md \
-  --out OEBPS/chapters/9-Chapter-I-Unveiling-Your-Creative-Odyssey.xhtml \
-  --roman I \
-  --title "Chapter I: Unveiling Your Creative Odyssey" \
-  --quoteImage "chapter-i-quote.JPEG"
+npm install
 ```
 
-## QA the XHTML
+## Convert all chapters
 
 ```bash
-node tools/qa-checks.js "OEBPS/chapters/*.xhtml" --images OEBPS/images --styles OEBPS/styles
+npm run convert:chapters   # outputs .xhtml to OEBPS/complete/
 ```
 
-## Make a React canvas preview
+## Generate canvas previews
 
 ```bash
-node tools/make-canvas.js \
-  --xhtml OEBPS/chapters/9-Chapter-I-Unveiling-Your-Creative-Odyssey.xhtml \
-  --out tools/canvas/chapter-01.jsx
+npm run make:canvases      # outputs *_canvas.html to OEBPS/react/
 ```
 
-Open the JSX in your dev app and render it to see the chapter with external CSS applied (via an iframe).
+Open any file in `OEBPS/react/` in a browser or local static server to preview the rendered chapter with the project's shared CSS.
