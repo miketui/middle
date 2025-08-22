@@ -10,7 +10,7 @@ word_count: 6998
 reading_time: "28 minutes"
 difficulty: "Intermediate"
 key_concepts: ["sustainable practices", "eco-friendly salon", "ethical sourcing", "environmental responsibility"]
-image_quote: "../assets/images/chapter-xiii-quote.png"
+image_quote: "../images/chapter-xiii-quote.JPEG"
 ---
 
 # Chapter XIII: Embracing Ethics and Sustainability in Hairstyling
@@ -381,7 +381,6 @@ b) Using disposable plastic cups for clients
 c) Ignoring product packaging
 d) Increasing heating to reduce humidity
 
-**Answer:** a - Installing LED lighting reduces energy consumption by up to 75% and provides better illumination for detailed styling work.
 
 ### Question 2
 Why is providing detailed service cost breakdowns beneficial?
@@ -391,7 +390,6 @@ b) It helps clients understand the value of sustainable practices
 c) It removes the need for sustainable practices
 d) It simplifies staff training
 
-**Answer:** b - Detailed cost breakdowns help clients understand the value of sustainable practices by showing how their investment supports environmental responsibility and ethical business practices.
 
 ### Question 3
 Which high-performance, energy-efficient hair dryer is known for its intelligent heat control?
@@ -401,7 +399,6 @@ b) Dyson Supersonic
 c) Hot Tools Professional
 d) Conair Infiniti Pro
 
-**Answer:** b - The Dyson Supersonic features intelligent heat control and efficient airflow design that optimizes energy usage without compromising performance.
 
 ### Question 4
 What is a key benefit of joining salon alliances focused on sustainability?
@@ -411,17 +408,7 @@ b) Increased leverage in advocating for eco-friendly supplies
 c) Reduced need for sustainable practices
 d) Free marketing materials
 
-**Answer:** b - Salon alliances provide increased leverage in advocating for eco-friendly supplies through collective purchasing power and unified demands to suppliers.
 
-### Question 5
-What does intersectional sustainability equity involve?
-
-a) Focusing only on environmental impact
-b) Including diverse voices in eco-friendly practice conversations
-c) Ignoring cultural differences in sustainability approaches
-d) Limiting sustainability to certain communities
-
-**Answer:** b - Intersectional sustainability equity involves including diverse voices, especially from underrepresented communities, in conversations about eco-friendly practices to ensure inclusive and equitable approaches.
 
 ## Worksheet
 
@@ -477,11 +464,6 @@ _________________________________________________
 
 **Month 5-6:**
 _________________________________________________
-
-## Image Quote
-
-![Your hands mold more than hair—they mold aspirations, turning the salon chair into a seat of transformation. — Michael David](../assets/images/chapter-xiii-quote.png)
-
 ## Endnotes
 
 [^1]: United States Environmental Protection Agency, "Sustainable Management in Service Industries," 2021, accessed March 8, 2025, https://www.epa.gov/smm.

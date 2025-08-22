@@ -10,7 +10,7 @@ word_count: 6285
 reading_time: "25 minutes"
 difficulty: "Advanced"
 key_concepts: ["AI applications", "virtual consultations", "technology adoption", "human-AI collaboration"]
-image_quote: "../assets/images/chapter-xiv-quote.png"
+image_quote: "../images/chapter-xiv-quote.JPEG"
 ---
 
 # Chapter XIV: The Impact of AI on the Beauty Industry
@@ -360,7 +360,6 @@ b) Virtual try-on experiences for makeup and hair color
 c) Manual data entry of customer information
 d) Optimizing supply chain logistics
 
-**Answer:** c - Manual data entry of customer information is not an AI application; AI systems actually automate and eliminate the need for manual data entry through intelligent data collection and processing.
 
 ### Question 2
 How can AI contribute to sustainability in the beauty industry?
@@ -370,7 +369,6 @@ b) By analyzing manufacturing processes for waste reduction opportunities
 c) By encouraging overproduction of products
 d) By promoting the use of non-recyclable packaging
 
-**Answer:** b - AI analyzes manufacturing processes for waste reduction opportunities through predictive inventory management, optimized logistics, and conscious consumption strategies.
 
 ### Question 3
 What is a potential challenge of integrating AI into the beauty industry?
@@ -380,7 +378,6 @@ b) Reducing the need for human creativity
 c) Ensuring data privacy and addressing algorithmic bias
 d) Slowing down the product development process
 
-**Answer:** c - Ensuring data privacy and addressing algorithmic bias are key challenges that require careful attention to ethical AI implementation and transparent frameworks.
 
 ### Question 4
 How can hairstylists best utilize AI in their practice?
@@ -390,17 +387,7 @@ b) By ignoring AI advancements altogether
 c) By using AI to enhance their creativity and improve client experiences
 d) By relying solely on AI for product recommendations
 
-**Answer:** c - Hairstylists can best utilize AI by using it to enhance their creativity and improve client experiences while maintaining their essential human skills in empathy, artistry, and personal connection.
 
-### Question 5
-What human skill becomes MORE valuable in the AI era?
-
-a) Manual data calculation
-b) Emotional intelligence and client connection
-c) Memorizing product ingredients
-d) Following rigid procedural steps
-
-**Answer:** b - Emotional intelligence and client connection become more valuable as AI handles analytical tasks, making human empathy, creativity, and relationship-building the key differentiators.
 
 ## Worksheet
 
@@ -475,11 +462,6 @@ Based on this worksheet, list three specific actions you'll take in the next 30 
 1. _________________________________________________
 2. _________________________________________________
 3. _________________________________________________
-
-## Image Quote
-
-![Let each stroke of your brush not only paint beauty but also stroke the fires of your entrepreneurial spirit. — Michael David](../assets/images/chapter-xiv-quote.png)
-
 ## Endnotes
 
 [^1]: L'Oréal, "The Role of AI in Modern Beauty," 2021, accessed March 8, 2025, https://www.loreal.com/en/innovation/ai-beauty.

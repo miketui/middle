@@ -160,6 +160,18 @@ if (!introSrc.trim()) die('Could not extract Introduction block (paragraphs befo
 // Split remaining sections
 const sections = splitSectionsOnHeadings(restSrc);
 
+// Build body markdown by concatenating all non-special sections
+const specialSections = new Set(['quiz', 'worksheet', 'endnotes', 'notes']);
+const bodySegments = [];
+if (sections['_BODY']) bodySegments.push(sections['_BODY']);
+for (const [k, v] of Object.entries(sections)) {
+  if (k === '_BODY') continue;
+  if (!specialSections.has(k.toLowerCase().trim())) {
+    bodySegments.push(`## ${k}\n${v}`.trim());
+  }
+}
+const bodyMarkdown = bodySegments.join('\n\n');
+
 // Optional: specific sections by name (case-insensitive lookup)
 function pick(name) {
   for (const k of Object.keys(sections)) {
@@ -183,7 +195,7 @@ ensureAssets(imagesRoot, neededImages);
 const introHTML = mdToHtml(introSrc)
   .replace(/^<p>/, '<p>') // first paragraph will get drop-cap via wrapper
 ;
-const bodyHTML = mdToHtml(sections['_BODY']);
+const bodyHTML = mdToHtml(bodyMarkdown);
 
 const quizHTMLMd = pick('Quiz');
 const worksheetHTMLMd = pick('Worksheet');

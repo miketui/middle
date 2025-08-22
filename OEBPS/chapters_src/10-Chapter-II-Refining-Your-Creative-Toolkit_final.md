@@ -10,7 +10,7 @@ word_count: 3388
 reading_time: "17 minutes"
 difficulty: "Beginner"
 key_concepts: ["professional hairstylist tools", "master hair techniques", "precision cutting skills", "quality styling equipment"]
-image_quote: "../assets/images/chapter-ii-quote.png"
+image_quote: "../images/chapter-ii-quote.JPEG"
 ---
 
 # Chapter II: Refining Your Creative Toolkit
@@ -255,7 +255,6 @@ b) Mastery means never needing to learn new techniques
 c) Mastery is an ongoing cycle of learning, experimenting, and evolving
 d) Mastery means catering exclusively to high-end clients
 
-**Answer:** c) Mastery is an ongoing cycle of learning, experimenting, and evolving
 
 ### Question 2
 Which of the following is most accurate regarding professional-grade tools?
@@ -265,7 +264,6 @@ b) They often prove cost-effective when calculating cost-per-use over time
 c) They require less maintenance than budget tools
 d) They're only needed for celebrity clients
 
-**Answer:** b) They often prove cost-effective when calculating cost-per-use over time
 
 ### Question 3
 What is the recommended frequency for professional sharpening of cutting tools?
@@ -275,7 +273,6 @@ b) Every 6-12 months
 c) Only when visibly damaged
 d) Every 5 years
 
-**Answer:** b) Every 6-12 months
 
 ### Question 4
 Which approach best describes Vidal Sassoon's impact through his tool mastery?
@@ -285,7 +282,6 @@ b) Using unconventional objects for styling
 c) Precision cutting that liberated women from high-maintenance styles
 d) Focusing exclusively on textured hair
 
-**Answer:** c) Precision cutting that liberated women from high-maintenance styles
 
 ## Worksheet
 
@@ -324,11 +320,6 @@ Take a few minutes to reflect on your relationship with your tools and your jour
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![Simply love what you do and the rest will shine through… educating myself daily on new trends and techniques is my passion. — Kendall Dorsey](../assets/images/chapter-ii-quote.png)
-
 ## Endnotes
 
 [^1]: Daniel Goldstein, "The Extended Mind in Creative Practice: How Tools Become Extensions of Ourselves," *Creativity Research Journal*, 2021, https://www.creativityresearchjournal.org/extended-mind.

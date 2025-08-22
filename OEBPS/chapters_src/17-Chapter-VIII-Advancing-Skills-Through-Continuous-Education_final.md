@@ -10,7 +10,7 @@ word_count: 5928
 reading_time: "30 minutes"
 difficulty: "Intermediate"
 key_concepts: ["Continuous Education", "Online Learning", "Mentorship", "Skill Development", "Professional Growth"]
-image_quote: "../assets/images/chapter-viii-quote.png"
+image_quote: "../images/chapter-viii-quote.JPEG"
 ---
 
 # Chapter VIII: Advancing Skills Through Continuous Education
@@ -385,7 +385,6 @@ b) They provide in-person, hands-on training
 c) They offer a one-size-fits-all curriculum
 d) They allow for self-paced, on-demand learning
 
-**Answer:** d) They allow for self-paced, on-demand learning
 
 ### Question 2
 What should hairstylists prioritize when seeking out international immersion opportunities?
@@ -395,7 +394,6 @@ b) Programs that focus solely on technical skills
 c) Opportunities that align with their learning goals and provide cultural context
 d) Experiences that do not require any language or cultural preparation
 
-**Answer:** c) Opportunities that align with their learning goals and provide cultural context
 
 ### Question 3
 What is one of the most important factors to consider when identifying potential iconic mentors?
@@ -405,7 +403,6 @@ b) Their alignment with your own aspirations, values, and learning style
 c) Their willingness to give you free products or services
 d) Their geographic proximity to your location
 
-**Answer:** b) Their alignment with your own aspirations, values, and learning style
 
 ### Question 4
 What is the main purpose of participating in peer critique circles and forums?
@@ -415,7 +412,6 @@ b) To critique others' work without sharing your own
 c) To get constructive feedback on your work and learn from others at a similar level
 d) To compete with other hairstylists and prove your superiority
 
-**Answer:** c) To get constructive feedback on your work and learn from others at a similar level
 
 ## Worksheet
 
@@ -524,11 +520,6 @@ Use this calculator to evaluate potential educational investments based on their
     _____________________________________________________________________
     
     _____________________________________________________________________
-
-## Image Quote
-
-![Balance in the beauty industry isn’t found, it’s created through a symphony of service, skill, and self-care. — Michael David](../assets/images/chapter-viii-quote.png)
-
 ## Endnotes
 
 [^1]: Clayton M. Christensen, *The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail* (Boston: Harvard Business Review Press, 1997).
