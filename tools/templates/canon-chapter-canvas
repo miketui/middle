@@ -1,0 +1,405 @@
+import React from "react";
+
+// React visual preview of Chapter 1 converted XHTML
+// Notes:
+// • Uses Tailwind utility classes for layout shell + a scoped <style> tag for the chapter-specific classes from the EPUB template.
+// • Image assets are represented with lightweight inline SVG placeholders so the preview renders self‑contained.
+// • Structure mirrors the compiled chapter (title → body → endnotes → quiz → worksheet → closing image).
+
+const QUOTE_IMG =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(`<?xml version='1.0' encoding='UTF-8'?>
+  <svg xmlns='http://www.w3.org/2000/svg' width='1200' height='720' viewBox='0 0 1200 720'>
+    <defs>
+      <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+        <stop offset='0%' stop-color='#1797a6'/>
+        <stop offset='50%' stop-color='#26a69a'/>
+        <stop offset='100%' stop-color='#4db6ac'/>
+      </linearGradient>
+    </defs>
+    <rect width='100%' height='100%' fill='url(#g)'/>
+    <g fill='white' fill-opacity='0.15'>
+      <circle cx='150' cy='120' r='90'/>
+      <circle cx='350' cy='220' r='130'/>
+      <circle cx='900' cy='180' r='160'/>
+      <circle cx='700' cy='500' r='140'/>
+    </g>
+    <text x='50%' y='45%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='34' fill='white'>Image Quote — Chapter I</text>
+    <text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='20' fill='white' opacity='0.9'>Hair in motion to represent change — Jawara W</text>
+  </svg>`);
+
+const ENDNOTE_MARK =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(`<?xml version='1.0' encoding='UTF-8'?>
+  <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'>
+    <circle cx='8' cy='8' r='7' fill='#1797a6'/>
+    <text x='8' y='11' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='white'>✦</text>
+  </svg>`);
+
+export default function Chapter1ReactPreview() {
+  return (
+    <div className="w-full min-h-screen bg-slate-50 py-6">
+      {/* Scoped CSS for the chapter system classes */}
+      <style>{`
+      :root {
+        --primary-color:#1a1a1a; --secondary-color:#333; --accent-color:#1797a6; --border-color:#b2dfdb;
+        --background-light:#f7f9fa; --background-worksheet:#fafafa; --text-muted:#666; --text-light:#888; --white:#fff;
+        --title-gradient: linear-gradient(135deg,#1797a6 0%,#26a69a 50%,#4db6ac 100%);
+        --shadow-light: 0 1px 3px rgba(23,151,166,0.07); --shadow-medium:0 2px 4px rgba(23,151,166,0.15);
+      }
+      .preview-container{max-width:520px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);overflow:hidden}
+      .chap-title{background:var(--background-light);padding:2rem}
+      .chapter-number-container{display:flex;justify-content:center;margin-bottom:1rem}
+      .chapter-number-pill{display:inline-block;background:linear-gradient(45deg,#1797a6,#26a69a);border-radius:9999px;padding:.6rem 1.1rem;box-shadow:var(--shadow-medium)}
+      .chapter-number-text{font-family:serif;color:#fff;letter-spacing:.08em}
+      .chapter-title-stack{display:flex;gap:1rem;align-items:flex-start;margin:1rem 0 1rem}
+      .chapter-title-vertical{border-left:4px solid var(--accent-color);padding-left:1rem;height:auto}
+      .chapter-title-word{font-size:1.75rem;line-height:1.15;color:var(--accent-color);text-transform:uppercase;letter-spacing:.02em;margin:.15rem 0}
+      .bible-quote-container{background:#e0f2f1;border:2px solid var(--accent-color);border-radius:10px;padding:1rem 1.25rem;margin:1rem auto;max-width:90%;text-align:center;box-shadow:var(--shadow-light)}
+      .bible-quote-text{font-style:italic;margin:0 0 .25rem}
+      .bible-quote-reference{font-weight:700;color:var(--text-muted)}
+      .introduction-heading{text-transform:uppercase;letter-spacing:.06em;text-align:center;margin:1rem 0 .5rem;color:#111}
+      .chap-body{padding:1.25rem 1.5rem}
+      .chap-body p{margin:0 0 1rem;text-align:justify}
+      .content-area h2{font-size:1.25rem;color:var(--accent-color);border-bottom:3px solid var(--border-color);padding-bottom:.5rem;margin:1.5rem 0 1rem;}
+      .content-area h3{font-size:1.05rem;color:#0f6470;margin:1rem 0 .5rem;padding-left:1rem;position:relative}
+      .content-area h3:before{content:'▶';position:absolute;left:0;color:var(--accent-color);font-size:.8rem}
+      .case-study{background:linear-gradient(135deg,#f8fffe 0%,#e0f7fa 100%);border-left:6px solid var(--accent-color);padding:1rem;border-radius:0 12px 12px 0;margin:1.25rem 0;box-shadow:var(--shadow-light)}
+      .case-study h3{background:var(--accent-color);color:#fff;padding:.5rem 1rem;margin:-1rem -1rem .75rem;border-radius:0 12px 0 0;text-align:center}
+      .action-steps,.key-takeaways,.reflection-questions{padding:1rem;border-radius:12px;margin:1.25rem 0;border:2px solid #b3e5fc;background:#f7fbfd}
+      .action-steps h3,.key-takeaways h2,.reflection-questions h2{text-align:center;margin:0 0 .75rem;color:#0369a1}
+      .action-steps ul,.key-takeaways ul{padding-left:1rem}
+      .endnotes{margin-top:1.25rem;padding-top:1rem;border-top:2px solid var(--border-color)}
+      .endnotes-title{color:var(--accent-color);margin-bottom:.75rem}
+      .endnote{margin:.5rem 0;color:var(--text-muted);font-size:.92rem;position:relative;padding-left:1.25rem}
+      .endnote:before{content:'';position:absolute;left:0;top:.25rem;width:.9rem;height:.9rem;background:url(${ENDNOTE_MARK}) center/contain no-repeat}
+      .chap-quiz{background:var(--background-light);border-radius:10px;padding:1rem}
+      .quiz-title{text-align:center;color:var(--accent-color);margin-bottom:.5rem}
+      .quiz-options{padding-left:1rem}
+      .worksheet{background:var(--background-worksheet);border-radius:10px;padding:1rem}
+      .worksheet-title{text-align:center;color:var(--accent-color);margin-bottom:.5rem}
+      .worksheet-input{width:100%;min-height:4rem;border:1px solid var(--border-color);border-radius:6px;background:#fff;margin:.5rem 0}
+      .image-quote{padding:1.25rem;text-align:center}
+      figure{margin:1rem auto;}
+      figcaption{font-size:.9rem;color:var(--text-light)}
+      `}</style>
+
+      <div className="preview-container">
+        {/* ========================= TITLE PAGE ========================= */}
+        <section className="chap-title" role="doc-part">
+          <div className="chapter-number-container" aria-label="Chapter number">
+            <div className="chapter-number-pill"><span className="chapter-number-text">I</span></div>
+          </div>
+          <div className="chapter-title-container">
+            <div className="chapter-title-stack">
+              <div className="chapter-title-vertical" aria-hidden="true" />
+              <div>
+                <h1 className="chapter-title-word">Unveiling</h1>
+                <h1 className="chapter-title-word">Your</h1>
+                <h1 className="chapter-title-word">Creative</h1>
+                <h1 className="chapter-title-word">Odyssey</h1>
+              </div>
+            </div>
+          </div>
+          <figure className="bible-quote-container" role="group" aria-labelledby="bq-text bq-ref">
+            <blockquote className="bible-quote-text" id="bq-text">
+              For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.
+            </blockquote>
+            <figcaption className="bible-quote-reference" id="bq-ref">— Ephesians 2:10</figcaption>
+          </figure>
+          <div className="introduction-heading" role="heading" aria-level={2}>Introduction</div>
+          <div className="introduction-paragraph">
+            <p>
+              Picture celebrity stylist Ursula Stephen, who transformed Rihanna's look early in her career, catapulting both the singer's and her own careers to new heights.
+              <sup id="fnref-1"><a href="#fn-1">1</a></sup> With each cut, Ursula shaped not only her client's confidence but also a bold public identity, proving that hairstyling is more than aesthetics—it's a powerful tool for self-expression and cultural influence.
+            </p>
+            <p>
+              In a society where hair can symbolize power, rebellion, and individuality, stylists like Stephen—and pioneers such as Madam C.J. Walker
+              <sup id="fnref-2"><a href="#fn-2">2</a></sup>—showcase how hairstyling holds the power to not only transform appearances but also to reshape societal expectations. This chapter embarks on a journey to explore the profound impact of conscious hairstyling. We'll delve into its ability to redefine lives, one cut, color, and conversation at a time.
+            </p>
+            <p>
+              But this exploration isn't purely theoretical—it serves as a call to action, an invitation to infuse your artistry with purpose, passion, and profound awareness. Through compelling stories, expert insights, and practical strategies, you'll acquire the tools to enhance your skills, forge meaningful connections with clients, and leverage the transformative power of conscious hairstyling.
+            </p>
+            <p>
+              In the realm of conscious hairstyling, transformation begins the moment your client takes a seat in your chair. Are you ready to unlock the true potential of your craft and become a force for positive change in the world? Let's begin.
+            </p>
+          </div>
+        </section>
+
+        {/* ============================ BODY ============================ */}
+        <section className="chap-body" role="doc-chapter">
+          <div className="content-area">
+            <h2>Personal Anecdote: A Personal Discovery</h2>
+            <p>
+              I remember the morning I drove to a client's home—a small apartment she hadn't left in weeks... By the time I finished styling her silver waves, the woman in the mirror barely resembled the one who had answered the door.
+              <sup id="fnref-3"><a href="#fn-3">3</a></sup>
+            </p>
+
+            <h2>I. The Transformative Power of Conscious Hairstyling</h2>
+            <h3>Understanding the Psychological Impact of Hairstyling on Self-Esteem</h3>
+            <p>
+              Think back to the exhilaration you felt after a transformative haircut... You become a confidant, a supporter, and a catalyst for positive transformation in your clients' lives.
+              <sup id="fnref-4"><a href="#fn-4">4</a></sup>
+            </p>
+
+            <div className="case-study">
+              <h3>Case Study: Ted Gibson's Transformative Approach</h3>
+              <p><strong>Challenge:</strong> Clients experiencing hair loss due to alopecia or chemotherapy often struggle with self-confidence and identity issues related to their appearance.</p>
+              <p><strong>Solution:</strong> Celebrity stylist Ted Gibson employs compassionate listening and highly personalized approaches.</p>
+              <p><strong>Outcome:</strong> Clients feel empowered and beautiful during challenging periods.
+                <sup id="fnref-5"><a href="#fn-5">5</a></sup>
+              </p>
+            </div>
+
+            <div className="action-steps">
+              <h3>Actionable Steps</h3>
+              <ul>
+                <li><em>Prioritize Active Listening:</em> Use open-ended questions in consultations.</li>
+                <li><em>Educate Yourself on Appearance Psychology:</em> Books, workshops, and courses.</li>
+                <li><em>Foster a Diverse Environment:</em> Celebrate all hair textures and cultures.</li>
+              </ul>
+            </div>
+
+            <h3>Exploring the Cultural and Social Significance of Hair Throughout History</h3>
+            <p>
+              Hair is more than style; it symbolizes identity, status, and legacy. In ancient Egypt, elaborate wigs symbolized power.
+              <sup id="fnref-7"><a href="#fn-7">7</a></sup> The Afro of the 1960s stood for pride and resistance.
+              <sup id="fnref-6"><a href="#fn-6">6</a></sup>
+            </p>
+
+            <div className="action-steps">
+              <h3>Actionable Steps</h3>
+              <ul>
+                <li><em>Create a Cultural Hairstyling Guide:</em> Research and compile references.</li>
+                <li><em>Use Inclusive Language and Imagery:</em> Reflect diverse hair types.</li>
+                <li><em>Engage in Community Events:</em> Host or join heritage workshops.</li>
+              </ul>
+            </div>
+
+            <h3>Profiles of Influential Hairstylists and Their Unique Perspectives</h3>
+            <p>
+              Vidal Sassoon revolutionized geometric cuts
+              <sup id="fnref-8"><a href="#fn-8">8</a></sup>; Vernon François champions curly and coily textures
+              <sup id="fnref-10"><a href="#fn-10">10</a></sup>; and Kim Kimble is known for empowering client education
+              <sup id="fnref-9"><a href="#fn-9">9</a></sup>.
+            </p>
+
+            <div className="action-steps">
+              <h3>Actionable Steps</h3>
+              <ul>
+                <li><em>Wall of Inspiration:</em> Quotes & images of influential stylists.</li>
+                <li><em>Reflect on Philosophies:</em> Note what aligns with your approach.</li>
+                <li><em>Share Stories:</em> Spark deeper client conversations.</li>
+              </ul>
+            </div>
+
+            <h2>II. The Hairstylist as Artist and Storyteller</h2>
+            <h3>Embracing the Artistry and Creativity of Hairstyling</h3>
+            <p>
+              Approach each client as a unique canvas—draw inspiration from nature, architecture, and culture.
+            </p>
+            <div className="action-steps">
+              <h3>Actionable Steps</h3>
+              <ul>
+                <li><em>Create a Mood Board</em></li>
+                <li><em>Experiment with New Techniques</em></li>
+                <li><em>Collaborate on Styled Shoots</em></li>
+              </ul>
+            </div>
+
+            <h3>Harnessing the Power of Storytelling in Hairstyling</h3>
+            <p>Felicia Leatherwood emphasizes embracing natural textures and cultural roots for empowerment.</p>
+
+            <h3>The Intersection of Hairstyling and Identity Expression</h3>
+            <p>Honor heritage behind textured hair; support clients through life transitions with empathy.</p>
+
+            <h2>III. Mastering Classic and Cutting-Edge Techniques</h2>
+            <h3>Mastering Classic and Contemporary Methods</h3>
+            <p>Blend timeless foundations with modern color and cut innovations.</p>
+
+            <h3>Exploring Texture and Embracing Natural Styles</h3>
+            <p>Specialize in textured hair (e.g., finger-coiling techniques) and build a diverse portfolio.</p>
+
+            <h3>Harnessing Technology and Social Media for Inspiration</h3>
+            <p>Share transformations, discover trends, and offer AR try-ons for confidence.</p>
+
+            <h2>IV. Understanding Diverse Hair Types and Championing Representation</h2>
+            <h3>Unique Needs and Textures</h3>
+            <p>Know density, porosity, and scalp health differences across types.</p>
+
+            <h3>Championing Representation and Diversity in Salon Practices</h3>
+            <p>Representation in staff, imagery, and product mix builds trust.</p>
+
+            <h3>Cultivating Cultural Competence and Sensitivity</h3>
+            <p>Honor traditions and approach identity-forward styling with respect.</p>
+
+            <h2>V. The Consultation: Co-Creating the Vision</h2>
+            <h3>Active Listening and Observation</h3>
+            <p>Attend to verbal and non-verbal cues; refine the plan collaboratively.</p>
+
+            <h3>Guiding Clients in Defining Their Unique Hair Identity</h3>
+            <p>Use lookbooks and style quizzes; virtual try-ons reduce uncertainty.</p>
+
+            <h3>Co-Developing a Holistic Hair Care Plan</h3>
+            <p>Pair in-salon services with at-home maintenance for longevity.</p>
+
+            <h2>VI. Building and Nurturing Client Relationships</h2>
+            <h3>Creating a Welcoming and Inclusive Salon Environment</h3>
+            <p>Inclusivity training, feedback systems, and décor that reflects diversity.</p>
+
+            <h3>Fostering Trust and Loyalty with Empathy</h3>
+            <p>CRM notes, comfort menus, and sensitivity training deepen loyalty.</p>
+
+            <h3>Educating and Empowering Clients</h3>
+            <p>Workshops, tutorials, and community challenges boost confidence.</p>
+
+            <h2>VII. Thriving as a Freelance Hairstylist</h2>
+            <h3>Cultivating a Mindset of Abundance and Resilience</h3>
+            <p>Gratitude journaling, support networks, and milestone goals.</p>
+
+            <h3>Effective Business and Marketing Strategies</h3>
+            <p>Define brand, leverage social media, and create referral programs.</p>
+
+            <h3>Balancing Artistry, Entrepreneurship, and Self-Care</h3>
+            <p>Set boundaries and protect creative energy.</p>
+
+            <h2>VIII. Ethical and Sustainable Practices in Hairstyling</h2>
+            <h3>Choosing Eco-Friendly Products</h3>
+            <p>Offer non-toxic lines; educate clients on benefits.</p>
+
+            <h3>Collaborating with Values-Aligned Professionals</h3>
+            <p>Join sustainability networks and eco-friendly partnerships.</p>
+
+            <h3>Advocating for Industry Reform and Consumer Education</h3>
+            <p>Use your platform to encourage mindful choices.</p>
+
+            <h2>IX. Crafting Your Unique Hairstyling Legacy</h2>
+            <p>Clarify mission and values; track impact.</p>
+
+            <h3>Investing in Lifelong Learning and Growth</h3>
+            <p>Set annual learning goals; attend workshops and conferences.</p>
+
+            <h3>Leaving a Legacy of Positive Impact and Change</h3>
+            <p>Mentor others and support underrepresented stylists.</p>
+
+            <h2>Making Time for Growth</h2>
+            <h3>Quick Start Guide (15 Minutes or Less)</h3>
+            <ul>
+              <li><strong>Morning Mantra:</strong> “I uplift others through my creativity.”</li>
+              <li><strong>Gratitude Glimpse:</strong> Note something you're thankful for.</li>
+              <li><strong>Mini Reflection:</strong> What lit you up today?</li>
+              <li><strong>Quick Salon Spark:</strong> Capture flashes of inspiration.</li>
+            </ul>
+
+            <h2>Implementation Roadmap</h2>
+            <ul>
+              <li><strong>Advanced techniques?</strong> See the techniques section.</li>
+              <li><strong>Creative burnout?</strong> See artist/storyteller ideas.</li>
+              <li><strong>Freelance focus?</strong> See business tips.</li>
+              <li><strong>Ethics & sustainability?</strong> See eco strategies.</li>
+            </ul>
+
+            <h2>Chapter Conclusion</h2>
+            <p>
+              Conscious hairstyling blends empathy, mastery, and ethics—shaping confidence and identity one thoughtful snip at a time.
+            </p>
+          </div>
+
+          {/* ========================= ENDNOTES ========================= */}
+          <aside className="endnotes" role="doc-endnotes">
+            <h2 className="endnotes-title">Endnotes</h2>
+            <ol>
+              <li id="fn-1" className="endnote">Allure, "Ursula Stephen & Rihanna," April 18, 2017.</li>
+              <li id="fn-2" className="endnote">A'Lelia Bundles, <em>On Her Own Ground</em> (2001).</li>
+              <li id="fn-3" className="endnote">Jennifer Atkin, <em>Blowing My Way to the Top</em> (2020).</li>
+              <li id="fn-4" className="endnote">Cash & Pruzinsky, <em>Psychology and Health</em> (2002).</li>
+              <li id="fn-5" className="endnote">Essence, Ted Gibson feature (2019).</li>
+              <li id="fn-6" className="endnote">Kobena Mercer (1994).</li>
+              <li id="fn-7" className="endnote">Met Museum — Hair & Wigs in Ancient Egypt.</li>
+              <li id="fn-8" className="endnote">Vidal Sassoon, <em>Vidal</em> (2010).</li>
+              <li id="fn-9" className="endnote">Byrdie — Kim Kimble interview (2017).</li>
+              <li id="fn-10" className="endnote">Modern Salon — Vernon François (2021).</li>
+            </ol>
+          </aside>
+
+          {/* =========================== QUIZ =========================== */}
+          <section className="chap-quiz" role="region" aria-labelledby="quiz-title">
+            <h2 id="quiz-title" className="quiz-title">Quiz</h2>
+            <h3>Question 1</h3>
+            <p>What is one key characteristic of "conscious hairstyling" as described in this chapter?</p>
+            <ul className="quiz-options">
+              <li>a) Following rigid, traditional standards</li>
+              <li>b) Focusing only on price</li>
+              <li>c) Combining technical skill with empathy and cultural awareness</li>
+              <li>d) Ignoring client stories</li>
+            </ul>
+            <h3>Question 2</h3>
+            <p>Which example highlights the importance of a stylist's empathy?</p>
+            <ul className="quiz-options">
+              <li>a) Working hurriedly and silently</li>
+              <li>b) Picking magazine styles without discussion</li>
+              <li>c) Ted Gibson's support for clients facing alopecia or chemotherapy</li>
+              <li>d) Forcing a single style on everyone</li>
+            </ul>
+            <h3>Question 3</h3>
+            <p>Why are inclusive marketing materials significant?</p>
+            <ul className="quiz-options">
+              <li>a) Generic stock images required by law</li>
+              <li>b) They signal respect for all cultures and hair types</li>
+              <li>c) To upsell products</li>
+              <li>d) To avoid learning new textures</li>
+            </ul>
+            <h3>Question 4</h3>
+            <p>What benefit comes from a brief "Quick Start Guide"?</p>
+            <ul className="quiz-options">
+              <li>a) Stylists never need new techniques</li>
+              <li>b) Mandatory 3-hour journaling</li>
+              <li>c) Practical, time-friendly ways to reconnect with purpose</li>
+              <li>d) One-size-fits-all routine</li>
+            </ul>
+          </section>
+
+          {/* ========================= WORKSHEET ======================== */}
+          <section className="worksheet" role="region" aria-labelledby="ws-title">
+            <h2 id="ws-title" className="worksheet-title">Worksheet</h2>
+            <h3>Reflection and Implementation Exercises</h3>
+            <div>
+              <p><strong>1.</strong> Reflect on a time you helped someone rediscover themselves through hairstyling.</p>
+              <div className="worksheet-input" aria-label="Reflection 1" />
+              <div className="worksheet-input" aria-label="Reflection 1" />
+              <div className="worksheet-input" aria-label="Reflection 1" />
+            </div>
+            <div>
+              <p><strong>2.</strong> Pick one or two Quick Start ideas and note how you'll use them.</p>
+              <div className="worksheet-input" aria-label="Quick Start" />
+              <div className="worksheet-input" aria-label="Quick Start" />
+              <div className="worksheet-input" aria-label="Quick Start" />
+            </div>
+            <div>
+              <p><strong>3.</strong> Where do you need immediate growth? Outline one action for this week.</p>
+              <div className="worksheet-input" aria-label="Immediate Growth" />
+              <div className="worksheet-input" aria-label="Immediate Growth" />
+              <div className="worksheet-input" aria-label="Immediate Growth" />
+            </div>
+            <div>
+              <p><strong>4.</strong> Define your personal hairstyling mission in one sentence.</p>
+              <div className="worksheet-input" aria-label="Mission" />
+              <div className="worksheet-input" aria-label="Mission" />
+              <div className="worksheet-input" aria-label="Mission" />
+            </div>
+          </section>
+
+          {/* ======================= CLOSING IMAGE ====================== */}
+          <section className="image-quote" role="group" aria-labelledby="closing-caption">
+            <figure>
+              <img src={QUOTE_IMG} alt="Chapter I closing quote image placeholder" />
+              <figcaption id="closing-caption" className="text-sm text-slate-500">
+                I’m always doing things in a metaphorical way… hair in motion to represent change — Jawara W
+              </figcaption>
+            </figure>
+          </section>
+        </section>
+      </div>
+    </div>
+  );
+}
