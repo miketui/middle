@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{DOCUMENT_TITLE}} — Chapter {{ROMAN}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS must be relative for EPUB -->
+    <link rel="stylesheet" type="text/css" href="../styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  </head>
+
+  <!-- ============================================================= -->
+  <!--                  CHAPTER GOLDEN TEMPLATE                      -->
+  <!-- This file is the canonical XHTML the converter writes.        -->
+  <!-- Replace only {{PLACEHOLDERS}}. Do not remove classes, roles.  -->
+  <!-- Image casing must match files in OEBPS/images exactly.        -->
+  <!-- ============================================================= -->
+
+  <body class="chap-title">
+    <!-- ======================= TITLE PAGE ======================= -->
+    <section class="chap-title" role="doc-part">
+      <!-- Brushstroke + centered Roman numeral badge -->
+      <div class="chapter-number-container" aria-label="Chapter number">
+        <div class="chapter-number-brush">
+          <img class="brushstroke-img" src="../images/brushstroke.JPEG" alt="" />
+          <div class="chapter-number-text">{{ROMAN}}</div>
+        </div>
+      </div>
+
+      <!-- Stacked title with vertical accent rule on the left -->
+      <div class="chapter-title-container">
+        <div class="chapter-title-stack">
+          <div class="chapter-title-vertical" aria-hidden="true"></div>
+          <div>
+            <!-- Split title into lines exactly like Chapter I visual -->
+            {{#TITLE_STACK}}
+              <h1 class="chapter-title chapter-title-word">{{TITLE_WORD}}</h1>
+            {{/TITLE_STACK}}
+          </div>
+        </div>
+      </div>
+
+      <!-- Epigraph callout -->
+      <figure class="bible-quote-container image-quote" role="group" aria-labelledby="bq-text bq-ref">
+        <blockquote class="bible-quote-text" id="bq-text">{{EPIGRAPH_TEXT}}</blockquote>
+        <figcaption class="bible-quote-reference" id="bq-ref">— {{EPIGRAPH_REF}}</figcaption>
+      </figure>
+
+      <!-- Introduction block (first paragraph renders with drop cap via CSS) -->
+      <div class="introduction-heading" role="heading" aria-level="2">Introduction</div>
+      <div class="introduction-paragraph dropcap-first-letter">
+        {{INTRO_HTML}} <!-- multiple <p>…</p> allowed -->
+      </div>
+    </section>
+
+    <!-- ========================== BODY ========================== -->
+    <section class="chap-body" role="doc-chapter">
+      <div class="content-area">
+        {{BODY_HTML}} <!-- full markdown-to-HTML body, h2/h3/tables/lists/etc. -->
+      </div>
+
+      <!-- =================== OPTIONAL ASIDE NOTES =================== -->
+      <!-- Keep the container even if empty to match Chapter I contract -->
+      <aside class="endnotes" role="doc-endnotes">
+        <ol>
+          {{ASIDE_ENDNOTES}} <!-- <li id="fn-1">…</li> (short list, optional) -->
+        </ol>
+      </aside>
+
+      <!-- ========================= QUIZ ========================== -->
+      <section class="quiz-container chap-quiz avoid-break" role="region" aria-labelledby="quiz-title">
+        <h2 id="quiz-title" class="quiz-title">Quiz</h2>
+
+        <!-- Repeat 4 times exactly; keys map from markdown "Quiz" section -->
+        {{#QUIZ}}
+          <h3>Question {{N}}</h3>
+          <p>{{QUESTION}}</p>
+          <ul class="quiz-options">
+            <li>a) {{A}}</li>
+            <li>b) {{B}}</li>
+            <li>c) {{C}}</li>
+            <li>d) {{D}}</li>
+          </ul>
+          <p><strong>Answer:</strong> {{ANSWER_LETTER}}) {{ANSWER_TEXT}}</p>
+        {{/QUIZ}}
+      </section>
+
+      <!-- ======================= WORKSHEET ======================= -->
+      <section class="worksheet avoid-break" role="region" aria-labelledby="ws-title">
+        <h2 id="ws-title" class="worksheet-title">Worksheet</h2>
+        {{WORKSHEET_HTML}} <!-- Prebuilt sections with .worksheet-section and .worksheet-input -->
+      </section>
+
+      <!-- =================== CLOSING IMAGE QUOTE ================== -->
+      <section class="image-quote" role="group" aria-labelledby="closing-caption">
+        <figure>
+          <img src="../images/{{CHAPTER_QUOTE_FILE}}" alt="{{CHAPTER_QUOTE_ALT}}" />
+          <figcaption id="closing-caption" class="font-small color-light">{{CHAPTER_QUOTE_CAPTION}}</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ MASTER FOOTNOTES (REQUIRED IF ANY) ============ -->
+      <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+        <hr />
+        <ol>
+          {{FOOTNOTES}} <!-- <li id="fn-1" role="doc-endnote"><p>… <a href="#fnref-1" class="footnote-back" role="doc-backlink">↩︎</a></p></li> -->
+        </ol>
+      </section>
+    </section>
+  </body>
+</html>
