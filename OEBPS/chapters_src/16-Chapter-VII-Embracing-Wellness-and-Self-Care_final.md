@@ -10,7 +10,7 @@ word_count: 4835
 reading_time: "24 minutes"
 difficulty: "Intermediate"
 key_concepts: ["Physical Self-Care", "Mental Health Practices", "Social Support Systems", "Burnout Prevention", "Ergonomics"]
-image_quote: "../assets/images/chapter-vii-quote.png"
+image_quote: "../images/chapter-vii-quote.JPEG"
 ---
 
 # Chapter VII: Embracing Wellness and Self-Care
@@ -181,7 +181,6 @@ b) It's a legal requirement for all salons
 c) It can help prevent pain, injury, and strain over time
 d) It's a passing trend in the industry
 
-**Answer:** c) It can help prevent pain, injury, and strain over time
 
 ### Question 2
 Which of the following is NOT a recommended strategy for physical self-care?
@@ -191,7 +190,6 @@ b) Using ergonomic tools and equipment
 c) Skipping meals to save time between clients
 d) Staying hydrated with water throughout the day
 
-**Answer:** c) Skipping meals to save time between clients
 
 ### Question 3
 What is one benefit of practicing mindfulness and meditation for hairstylists?
@@ -201,7 +199,6 @@ b) It eliminates the need for continuing education
 c) It can help reduce stress and increase focus and clarity
 d) It automatically solves all problems with difficult clients
 
-**Answer:** c) It can help reduce stress and increase focus and clarity
 
 ### Question 4
 Why is it important for hairstylists to engage in creative renewal activities?
@@ -211,7 +208,6 @@ b) It can help prevent burnout and keep stylists inspired and motivated
 c) It's the only way to learn new skills and techniques
 d) It's a waste of time that takes away from client work
 
-**Answer:** b) It can help prevent burnout and keep stylists inspired and motivated
 
 ## Worksheet
 
@@ -288,11 +284,6 @@ d) It's a waste of time that takes away from client work
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![Every hairstyle tells a story, and every business decision writes a chapter in your book of professional success. — Michael David](../assets/images/chapter-vii-quote.png)
-
 ## Endnotes
 
 [^1]: U.S. Occupational Safety and Health Administration, "Ergonomics in the Workplace," 2020, accessed March 8, 2025, https://www.osha.gov/ergonomics.

@@ -10,7 +10,7 @@ word_count: 8890
 reading_time: "36 minutes"
 difficulty: "Advanced"
 key_concepts: ["hair texture diversity", "cultural competency", "inclusive practices", "texture techniques"]
-image_quote: "../assets/images/chapter-xvi-quote.png"
+image_quote: "../images/chapter-xvi-quote.JPEG"
 ---
 
 # Chapter XVI: Tresses and Textures - Embracing Diversity in Hairstyling
@@ -299,7 +299,6 @@ b) Protein composition
 c) Geographic location
 d) Sebum distribution
 
-**Answer:** c) Geographic location - Hair texture diversity is determined by biological factors like follicle shape, protein composition, and sebum distribution, not by where someone lives geographically.
 
 ### Question 2
 Which approach is most appropriate when consulting with a new client who has textured hair?
@@ -309,7 +308,6 @@ b) Assessing the hair only when wet to see its true length
 c) Evaluating texture characteristics including pattern, porosity, and density
 d) Focusing primarily on identifying problems to fix
 
-**Answer:** c) Evaluating texture characteristics including pattern, porosity, and density - Comprehensive texture analysis considers multiple factors to provide the best service and recommendations for each individual client.
 
 ### Question 3
 What is the primary reason dry cutting is often recommended for curly and coily textures?
@@ -319,7 +317,6 @@ b) It allows visualization of how curls naturally fall and clump
 c) It creates more precise lines
 d) It prevents the client from seeing mistakes
 
-**Answer:** b) It allows visualization of how curls naturally fall and clump - Dry cutting enables the stylist to work with the hair's natural curl pattern and see how it behaves in its normal state.
 
 ### Question 4
 Which statement about product application for textured hair is correct?
@@ -329,17 +326,7 @@ b) Heavy products are universally better for defining texture
 c) Application method can impact results as much as product selection
 d) Product should always be applied to dry hair for best results
 
-**Answer:** c) Application method can impact results as much as product selection - The timing, technique, and method of product application are crucial factors that can dramatically affect the final results, especially with textured hair.
 
-### Question 5
-According to the chapter, what is essential for building cultural competency in textured hair care?
-
-a) Only focusing on technical skills
-b) Understanding both the hair and the cultural significance attached to it
-c) Recommending the same styles for all clients
-d) Avoiding discussions about cultural background
-
-**Answer:** b) Understanding both the hair and the cultural significance attached to it - True cultural competency requires understanding not just the technical aspects of textured hair, but also the cultural, historical, and personal significance that different textures and styles hold for clients.
 
 ## Worksheet
 
@@ -432,11 +419,6 @@ _________________________________________________
 15. What steps will you take to better understand the cultural significance of different hair textures and styles?
 
 _________________________________________________
-
-## Image Quote
-
-![Within each curl lies a story, waiting to be unfurled by the artistry of hands; for every snip shapes not just hair, but the path to self-discovery. — Michael David](../assets/images/chapter-xvi-quote.png)
-
 ## Endnotes
 
 1. Gavazzoni Dias, M.F. "Hair Cosmetics: An Overview." *International Journal of Trichology* 7, no. 1 (2015): 2-15.

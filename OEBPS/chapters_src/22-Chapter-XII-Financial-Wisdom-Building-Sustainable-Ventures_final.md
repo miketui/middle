@@ -10,7 +10,7 @@ word_count: 6437
 reading_time: "26 minutes"
 difficulty: "Advanced"
 key_concepts: ["financial tracking", "pricing strategy", "cash flow management", "recession-proofing"]
-image_quote: "../assets/images/chapter-xii-quote.png"
+image_quote: "../images/chapter-xii-quote.JPEG"
 ---
 
 # Chapter XII: Financial Wisdom Building Sustainable Ventures
@@ -357,7 +357,6 @@ b) Real-time transaction updates and collaboration with accountants
 c) Limited integration with other systems
 d) Physical storage of records and receipts
 
-**Answer:** b - Real-time transaction updates and collaboration with accountants allows for accurate, accessible financial management from anywhere while enabling professional support.
 
 ### Question 2
 How often should freelance stylists conduct cash flow analyses to remain financially strategic?
@@ -367,7 +366,6 @@ b) Monthly
 c) Quarterly
 d) Annually
 
-**Answer:** c - Quarterly cash flow analyses provide optimal timing to identify trends, make strategic adjustments, and align with business cycles without overwhelming daily operations.
 
 ### Question 3
 Which of these strategies is an example of diversifying income?
@@ -377,7 +375,6 @@ b) Creating and selling a line of hair care products
 c) Avoiding e-commerce due to market size
 d) Relying solely on in-person appointments
 
-**Answer:** b - Creating and selling a line of hair care products represents income diversification by adding revenue streams beyond traditional in-person services.
 
 ### Question 4
 When setting prices for hairstyling services, which factor is critical to consider?
@@ -387,17 +384,7 @@ b) Ignoring material and operating costs
 c) Calculating all service delivery costs for markup integrity
 d) Offering discounts without assessing cost implications
 
-**Answer:** c - Calculating all service delivery costs for markup integrity ensures sustainable pricing that covers expenses and generates appropriate profit margins.
 
-### Question 5
-What is a key characteristic of the business growth phase?
-
-a) Irregular income and minimal client base
-b) Strategic reinvestment of 15-30% of profits for expansion
-c) Focus solely on survival and basic expense coverage
-d) Avoiding any technology or system upgrades
-
-**Answer:** b - Strategic reinvestment of 15-30% of profits for expansion characterizes the growth phase when businesses move beyond survival to systematic scaling and development.
 
 ## Worksheet
 
@@ -505,11 +492,6 @@ _________________________________________________
 Write a personal commitment to financial mastery and specific actions you'll take:
 _________________________________________________
 _________________________________________________
-
-## Image Quote
-
-![Entrepreneurship in hairstyling is the art of turning strands into standards and cuts into cultures. — Michael David](../assets/images/chapter-xii-quote.png)
-
 ## Endnotes
 
 [^1]: Forbes, "How Miko Branch Built Miss Jessie's Into an Iconic Beauty Brand," May 1, 2020, accessed March 8, 2025, https://www.forbes.com/sites/forbesbusinesscouncil/2020/05/01/how-miko-branch-built-miss-jessies-into-an-iconic-beauty-brand/.

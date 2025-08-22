@@ -10,7 +10,7 @@ word_count: 5548
 reading_time: "28 minutes"
 difficulty: "Intermediate"
 key_concepts: ["hairstylist mentorship", "accelerate stylist growth", "hair career guidance", "mentorship benefits beauty"]
-image_quote: "../assets/images/chapter-v-quote.png"
+image_quote: "../images/chapter-v-quote.JPEG"
 ---
 
 # Chapter V: Cultivating Creative Excellence Through Mentorship
@@ -231,7 +231,6 @@ b) It eliminates competition between stylists
 c) It elevates industry standards and drives innovation
 d) It allows mentors to claim credit for their mentees' work
 
-**Answer:** c) It elevates industry standards and drives innovation
 
 ### Question 2
 Which mentorship approach is characterized by embracing unexpected outcomes and viewing "mistakes" as opportunities for innovation?
@@ -241,7 +240,6 @@ b) Naeemah Lafond's precision-centered method
 c) Yusef Williams' improvisational style
 d) Marco Reyes' technical excellence philosophy
 
-**Answer:** c) Yusef Williams' improvisational style
 
 ### Question 3
 What is an important first step in finding the right mentor?
@@ -251,7 +249,6 @@ b) Offering to work for free at high-end salons
 c) Defining your own creative identity and values
 d) Copying the exact style of your favorite hairstylist
 
-**Answer:** c) Defining your own creative identity and values
 
 ### Question 4
 Which statement best describes a healthy transition from mentee to mentor?
@@ -261,7 +258,6 @@ b) Only mentoring those who can advance your career
 c) Embracing that mentorship is about sharing your journey, including both triumphs and challenges
 d) Maintaining strict hierarchy between you and those you mentor
 
-**Answer:** c) Embracing that mentorship is about sharing your journey, including both triumphs and challenges
 
 ## Worksheet
 
@@ -348,11 +344,6 @@ _____________________________________________________________________
 Values I Want to Instill:
 
 _____________________________________________________________________
-
-## Image Quote
-
-![I think people just need to be a lot more knowledgeable on hair types… there’s no white or black hair, only different types and textures. — Ursula Stephen](../assets/images/chapter-v-quote.png)
-
 ## Endnotes
 
 [^1]: T. D. Allen, L. T. Eby, M. L. Poteet, E. Lentz, and L. Lima, "Career Benefits Associated with Mentoring for Protégés: A Meta‑Analysis," *Journal of Applied Psychology*, 2004, https://psycnet.apa.org/fulltext/2004-15660-007.html.

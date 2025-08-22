@@ -10,7 +10,7 @@ word_count: 2670
 reading_time: "13 minutes"
 difficulty: "Beginner"
 key_concepts: ["overcome hairstylist burnout", "rekindle styling passion", "growth mindset beauty pro", "creative inspiration hair"]
-image_quote: "../assets/images/chapter-iii-quote.png"
+image_quote: "../images/chapter-iii-quote.JPEG"
 ---
 
 # Chapter III: Reigniting Your Creative Fire
@@ -161,7 +161,6 @@ b) Accepting lulls as part of the natural creative cycle.
 c) Forcing yourself to mimic others' work until you feel inspired.
 d) Sticking to one style and never experimenting again.
 
-**Answer:** b) Accepting lulls as part of the natural creative cycle.
 
 ### Question 2
 What is an "Inspiration Database"?
@@ -171,7 +170,6 @@ b) A tool used only for advanced stylists.
 c) A mandatory salon inventory of hair products.
 d) A backup power generator for salon tools.
 
-**Answer:** a) A digital or physical bank of ideas, images, and references that fuel creativity.
 
 ### Question 3
 How can stylists benefit from looking outside their field for inspiration?
@@ -181,7 +179,6 @@ b) It allows them to find brand-new techniques or styles unrelated to hair.
 c) It broadens their creative perspective and sparks fresh ideas.
 d) It guarantees immediate celebrity clients.
 
-**Answer:** c) It broadens their creative perspective and sparks fresh ideas.
 
 ### Question 4
 Which of the following best describes the purpose of rediscovering your "why"?
@@ -191,7 +188,6 @@ b) To give your day-to-day tasks deeper meaning and sustain long-term passion.
 c) To eliminate all future creative blocks.
 d) To prove to clients that you know the latest trends.
 
-**Answer:** b) To give your day-to-day tasks deeper meaning and sustain long-term passion.
 
 ## Worksheet
 
@@ -228,11 +224,6 @@ d) To prove to clients that you know the latest trends.
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![To master hairstyling, weave your skills with threads of passion, professionalism, and personal growth. — Michael David](../assets/images/chapter-iii-quote.png)
-
 ## Endnotes
 
 [^1]: Allure, "Jen Atkin: From Couch to Celebrity," 2019, https://www.allure.com/story/jen-atkin-profile.
