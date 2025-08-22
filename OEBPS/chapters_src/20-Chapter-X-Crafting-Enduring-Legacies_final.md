@@ -10,7 +10,7 @@ word_count: 6141
 reading_time: "31 minutes"
 difficulty: "Advanced"
 key_concepts: ["Legacy Building", "Sustainable Practices", "Well-being", "Long-term Impact", "Mentorship"]
-image_quote: "../assets/images/chapter-x-quote.png"
+image_quote: "../images/chapter-x-quote.JPEG"
 ---
 
 # Chapter X: Crafting Enduring Legacies
@@ -250,7 +250,6 @@ b) Imagining a future where your work makes a significant impact
 c) Copying the vision of successful competitors
 d) Avoiding change to maintain stability
 
-**Answer:** b) Imagining a future where your work makes a significant impact
 
 ### Question 2
 In the context of mentorship in hairstyling, which of the following is NOT an effective practice for mentors?
@@ -260,7 +259,6 @@ b) Encouraging independence in decision-making
 c) Providing all the answers to mentees' problems
 d) Celebrating the mentee's growth and achievements
 
-**Answer:** c) Providing all the answers to mentees' problems
 
 ### Question 3
 When leading through change in a hairstyling business, what is an important step?
@@ -270,7 +268,6 @@ b) Ignoring team members' concerns about the changes
 c) Communicating clearly about the reasons for change and expected benefits
 d) Focusing only on the negative aspects of the current situation
 
-**Answer:** c) Communicating clearly about the reasons for change and expected benefits
 
 ### Question 4
 Which of the following best describes the concept of "passing the torch" in hairstyling leadership?
@@ -280,7 +277,6 @@ b) Keeping all industry knowledge to oneself
 c) Nurturing the next generation of stylists and leaving a positive legacy
 d) Focusing solely on personal success and accolades
 
-**Answer:** c) Nurturing the next generation of stylists and leaving a positive legacy
 
 ## Worksheet
 
@@ -469,11 +465,6 @@ _____________________________________________________________________
 Write a short statement affirming your commitment to prioritizing self-care and sustainable practices in your hairstyling career:
 
 _____________________________________________________________________
-
-## Image Quote
-
-![Inspirational quote for Chapter X](../assets/images/chapter-x-quote.png)
-
 ## Endnotes
 
 [^1]: James Dyson, "How Olaplex Revolutionized Hair Repair," 2020, accessed March 8, 2025, https://www.olahpex.com.

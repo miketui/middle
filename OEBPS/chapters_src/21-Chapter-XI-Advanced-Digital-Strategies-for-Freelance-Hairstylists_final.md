@@ -10,7 +10,7 @@ word_count: 5704
 reading_time: "23 minutes"
 difficulty: "Intermediate"
 key_concepts: ["digital marketing", "social media strategy", "brand building", "client engagement"]
-image_quote: "../assets/images/chapter-xi-quote.png"
+image_quote: "../images/chapter-xi-quote.JPEG"
 ---
 
 # Chapter XI: Advanced Digital Strategies for Freelance Hairstylists
@@ -322,7 +322,6 @@ b) Creating a basic Instagram business account with 3-5 portfolio images
 c) Implementing automated email marketing sequences
 d) Investing in paid Facebook and Instagram advertising
 
-**Answer:** b - Creating a basic Instagram business account with 3-5 portfolio images is the most appropriate starting point for Digital Newcomers, allowing them to build confidence with simple, manageable first steps.
 
 ### Question 2
 What is a key benefit of co-creating educational content with complementary experts?
@@ -332,7 +331,6 @@ b) It allows you to charge higher prices for your services
 c) It expands your reach to new audiences and enhances your credibility
 d) It guarantees viral content on social media platforms
 
-**Answer:** c - Co-creating educational content expands your reach to new audiences and enhances your credibility by leveraging shared expertise and combined audiences.
 
 ### Question 3
 When creating tutorials for diverse hair types and textures, what should you include beyond technique demonstrations?
@@ -342,7 +340,6 @@ b) Cultural context and historical significance of the styles
 c) Promises of quick and easy results for everyone
 d) Expensive product recommendations
 
-**Answer:** b - Including cultural context and historical significance adds depth and respect to tutorials, making them more valuable and meaningful to diverse audiences.
 
 ### Question 4
 Which approach to automation is most effective for building client relationships?
@@ -352,17 +349,7 @@ b) Creating personalized, multi-channel nurturing sequences
 c) Only using automation for appointment reminders
 d) Avoiding automation entirely to maintain personal touch
 
-**Answer:** b - Creating personalized, multi-channel nurturing sequences provides value while maintaining the personal touch that builds strong client relationships.
 
-### Question 5
-What should be the primary focus when launching inclusive hashtag campaigns?
-
-a) Getting the most participants regardless of authenticity
-b) Creating movements that empower diverse voices to share their stories
-c) Competing with other beauty brands for trending status
-d) Promoting expensive products to diverse audiences
-
-**Answer:** b - Creating movements that empower diverse voices to share their stories focuses on authentic representation and meaningful engagement rather than superficial metrics.
 
 ## Worksheet
 
@@ -463,11 +450,6 @@ _________________________________________________
 **Success metrics:**
 _________________________________________________
 _________________________________________________
-
-## Image Quote
-
-![Inclusivity in hairstyling isn't just about the textures you tame but the hearts you touch and the minds you open. — Michael David](../assets/images/chapter-xi-quote.png)
-
 ## Endnotes
 
 [^1]: Hootsuite, "The State of Digital Marketing," 2023, accessed March 8, 2025, https://www.hootsuite.com/resources.

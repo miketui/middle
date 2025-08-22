@@ -10,7 +10,7 @@ word_count: 1341
 reading_time: "7 minutes"
 difficulty: "Beginner"
 key_concepts: ["freelance hairstylist networking", "hair industry connections", "build stylist referrals", "social media for stylists"]
-image_quote: "../assets/images/chapter-iv-quote.png"
+image_quote: "../images/chapter-iv-quote.JPEG"
 ---
 
 # Chapter IV: The Art of Networking in Freelance Hairstyling
@@ -330,7 +330,6 @@ b) Guaranteed immediate financial success
 c) Collaborative opportunities with complementary experts
 d) Increased brand visibility and client referrals
 
-**Answer:** b) Guaranteed immediate financial success
 
 ### Question 2
 What is one effective networking strategy for introverted stylists?
@@ -340,7 +339,6 @@ b) Scheduling one-on-one coffee meetings instead of large gatherings
 c) Avoiding networking altogether
 d) Sending impersonal mass emails to industry contacts
 
-**Answer:** b) Scheduling one-on-one coffee meetings instead of large gatherings
 
 ### Question 3
 How should stylists in rural markets approach networking differently?
@@ -350,7 +348,6 @@ b) Focus primarily on digital platforms and occasional travel to industry hubs
 c) Only network with other local businesses
 d) Relocate to urban centers to access better opportunities
 
-**Answer:** b) Focus primarily on digital platforms and occasional travel to industry hubs
 
 ### Question 4
 What is a key principle for nurturing long-term professional relationships?
@@ -360,7 +357,6 @@ b) Connecting only when you need something
 c) Adopting a service-based mindset focused on how you can help others
 d) Limiting interactions to formal business settings
 
-**Answer:** c) Adopting a service-based mindset focused on how you can help others
 
 ## Worksheet
 
@@ -405,11 +401,6 @@ d) Limiting interactions to formal business settings
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![Cultivate a career that grows with you, rooted in passion, watered by perseverance, and blossomed through bravery. — Michael David](../assets/images/chapter-iv-quote.png)
-
 ## Endnotes
 
 [^1]: Mark Granovetter, "The Strength of Weak Ties," *American Journal of Sociology* (1973), accessed March 8, 2025, https://www.jstor.org/stable/2776392.

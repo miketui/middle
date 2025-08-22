@@ -10,7 +10,7 @@ word_count: 5352
 reading_time: "27 minutes"
 difficulty: "Advanced"
 key_concepts: ["Leadership Vision", "Mentorship", "Innovation", "Network Building", "Micro-Leadership"]
-image_quote: "../assets/images/chapter-ix-quote.png"
+image_quote: "../images/chapter-ix-quote.JPEG"
 ---
 
 # Chapter IX: Stepping Into Leadership
@@ -309,7 +309,6 @@ b) Owning expensive equipment and tools
 c) Having a clear vision and strong "why" behind your work
 d) Working in the most prestigious salons
 
-**Answer:** c) Having a clear vision and strong "why" behind your work
 
 ### Question 2
 According to the chapter, what characterizes micro-leadership in hairstyling?
@@ -319,7 +318,6 @@ b) Small, consistent actions that positively influence others daily
 c) Focusing solely on your own career advancement
 d) Waiting until you have formal authority to lead
 
-**Answer:** b) Small, consistent actions that positively influence others daily
 
 ### Question 3
 What was the key insight from Joshua Coombes' #DoSomethingForNothing movement?
@@ -329,7 +327,6 @@ b) Only famous stylists can make a difference
 c) Professional skills can be powerful tools for social impact and leadership
 d) Leadership requires expensive marketing campaigns
 
-**Answer:** c) Professional skills can be powerful tools for social impact and leadership
 
 ### Question 4
 What role does vulnerability play in effective leadership for hairstylists?
@@ -339,17 +336,7 @@ b) It creates authentic connections and inspires trust
 c) It's only appropriate in personal relationships, not professional ones
 d) It demonstrates weakness and undermines authority
 
-**Answer:** b) It creates authentic connections and inspires trust
 
-### Question 5
-How should freelance hairstylists approach industry advocacy as leaders?
-
-a) Focus only on issues that directly benefit their own business
-b) Wait for others to initiate important conversations
-c) Look for opportunities to advocate for positive changes that benefit the entire industry
-d) Avoid taking positions on industry issues to remain neutral
-
-**Answer:** c) Look for opportunities to advocate for positive changes that benefit the entire industry
 
 ## Key Takeaways
 
@@ -441,11 +428,6 @@ Rate yourself from 1 (needs development) to 5 (strength) in each leadership area
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![Inspirational quote for Chapter IX](../assets/images/chapter-ix-quote.png)
-
 ## Endnotes
 
 [^1]: Salon Today, "The Rise of Freelance Hairstylists," 2021, accessed March 8, 2025, https://www.salontoday.com.

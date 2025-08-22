@@ -10,7 +10,7 @@ word_count: 4670
 reading_time: "23 minutes"
 difficulty: "Intermediate"
 key_concepts: ["hairstylist business skills", "salon financial goals", "hair client loyalty", "market hairstyling brand"]
-image_quote: "../assets/images/chapter-vi-quote.png"
+image_quote: "../images/chapter-vi-quote.JPEG"
 ---
 
 # Chapter VI: Mastering the Business of Hairstyling
@@ -256,7 +256,6 @@ b) Setting income goals aligned with your personal values
 c) Diversifying your revenue streams
 d) Hiring a financial advisor
 
-**Answer:** b) Setting income goals aligned with your personal values
 
 ### Question 2
 Which of the following is NOT an effective way to diversify your income as a freelance hairstylist?
@@ -266,7 +265,6 @@ b) Selling hair care products online or in your salon
 c) Raising your prices for all services across the board
 d) Teaching workshops or creating educational content
 
-**Answer:** c) Raising your prices for all services across the board
 
 ### Question 3
 What is the purpose of segmenting your clients into archetypes?
@@ -276,7 +274,6 @@ b) To tailor your communication, services, and marketing to their specific needs
 c) To determine which clients to prioritize over others
 d) To track client loyalty and reward frequent visitors
 
-**Answer:** b) To tailor your communication, services, and marketing to their specific needs
 
 ### Question 4
 Which of the following is an example of leveraging social media for your hairstyling business?
@@ -286,7 +283,6 @@ b) Promoting other local businesses on your profile
 c) Sharing personal updates unrelated to your business
 d) Keeping your account private and only accessible to clients
 
-**Answer:** a) Posting before-and-after photos and videos of your work
 
 ## Worksheet
 
@@ -341,11 +337,6 @@ This worksheet is designed to help you outline your hairstyling business model, 
    _____________________________________________________________________
    
    _____________________________________________________________________
-
-## Image Quote
-
-![Building a thriving business in hairstyling isn’t just about shaping hair; it’s about reshaping lives, starting with your own. — Michael David](../assets/images/chapter-vi-quote.png)
-
 ## Endnotes
 
 [^1]: Albert Bandura, *Self‑Efficacy: The Exercise of Control* (New York: Worth Publishers, 1997), accessed March 8, 2025, https://www.uky.edu/~eushe2/Bandura/Bandura1997EP.pdf.

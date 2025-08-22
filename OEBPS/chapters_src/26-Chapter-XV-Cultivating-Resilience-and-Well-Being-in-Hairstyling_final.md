@@ -10,7 +10,7 @@ word_count: 8450
 reading_time: "34 minutes"
 difficulty: "Intermediate"
 key_concepts: ["resilience building", "growth mindset", "self-care practices", "support networks"]
-image_quote: "../assets/images/chapter-xv-quote.png"
+image_quote: "../images/chapter-xv-quote.JPEG"
 ---
 
 # Chapter XV: Cultivating Resilience and Well-Being in Hairstyling
@@ -272,7 +272,6 @@ b) It fosters resilience by viewing setbacks as learning opportunities
 c) It guarantees immediate success
 d) It removes the need for skill development
 
-**Answer:** b) It fosters resilience by viewing setbacks as learning opportunities - A growth mindset transforms challenges into valuable learning experiences, building resilience and professional development over time.
 
 ### Question 2
 What does SMART stand for in goal-setting?
@@ -282,7 +281,6 @@ b) Simple, Manageable, Achievable, Realistic, Timely
 c) Standard, Measured, Applicable, Resilient, Tangible
 d) Structured, Motivated, Adaptable, Relevant, Task-based
 
-**Answer:** a) Specific, Measurable, Achievable, Relevant, Time-bound - The SMART framework provides structure for creating effective, actionable goals that lead to measurable progress.
 
 ### Question 3
 Why is a support network important for hairstylists?
@@ -292,7 +290,6 @@ b) It guarantees financial success
 c) It replaces the need for personal skill development
 d) It removes job-related stress
 
-**Answer:** a) It provides shared learning and emotional support - Support networks offer valuable connections, mentorship opportunities, and emotional resilience that enhance both personal and professional growth.
 
 ### Question 4
 What is one recommended practice for self-care as a hairstylist?
@@ -302,17 +299,7 @@ b) Practicing mindfulness and gratitude regularly
 c) Ignoring physical discomfort
 d) Avoiding all forms of professional development
 
-**Answer:** b) Practicing mindfulness and gratitude regularly - Regular mindfulness and gratitude practices help maintain mental clarity, reduce stress, and build emotional resilience for long-term career sustainability.
 
-### Question 5
-According to the burnout self-assessment, how many "yes" answers suggest you may be experiencing early signs of burnout?
-
-a) 1-2 yes answers
-b) 3 or more yes answers
-c) 5 or more yes answers
-d) All questions must be answered yes
-
-**Answer:** b) 3 or more yes answers - Three or more "yes" responses to the burnout assessment questions indicate early warning signs that require attention and implementation of wellness strategies.
 
 ## Worksheet
 
@@ -390,11 +377,6 @@ _________________________________________________
 **Success Metrics:** How will you know these strategies are working?
 
 _________________________________________________
-
-## Image Quote
-
-![Your craft is your voice—let it speak of innovation, echo with integrity, and sing with sincerity. — Michael David](../assets/images/chapter-xv-quote.png)
-
 ## Endnotes
 
 1. American Psychological Association, "Building Resilience: How to Bounce Back," 2019, accessed March 8, 2025, https://www.apa.org/topics/resilience.
