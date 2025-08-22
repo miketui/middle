@@ -1,0 +1,136 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ──────────────────────────────────────────────────────────────────────────────
+# UPDATE/SETUP SCRIPT (idempotent)
+# - Creates required folders
+# - Initializes package.json (type=module) + scripts
+# - Writes deps into package.json, then uses `npm ci` for deterministic install
+# - Clears any prior npm state that can trigger "Tracker 'idealTree' already exists"
+# - Verifies core assets
+# ──────────────────────────────────────────────────────────────────────────────
+
+ROOT="$(cd "$(dirname "$0")/.."; pwd)"
+OEBPS="$ROOT/OEBPS"
+TOOLS="$ROOT/tools"
+TEMPLATES="$TOOLS/templates"
+
+echo "Project root: $ROOT"
+
+# 0) Calm npm down (common noisy env + progress/audit/fund off)
+export NPM_CONFIG_PROGRESS=false
+export NPM_CONFIG_AUDIT=false
+export NPM_CONFIG_FUND=false
+export npm_config_progress=false
+export npm_config_audit=false
+export npm_config_fund=false
+# Unset legacy proxy envs that trigger warnings in newer npm
+unset npm_config_proxy || true
+unset npm_config_http_proxy || true
+unset npm_config_https_proxy || true
+
+# 1) Ensure folder tree
+mkdir -p "$OEBPS/chapters_src" \
+         "$OEBPS/chapters" \
+         "$OEBPS/styles" \
+         "$OEBPS/images" \
+         "$OEBPS/fonts" \
+         "$TOOLS/canvas" \
+         "$TEMPLATES"
+
+# 2) Initialize package.json once; pin ESM + scripts
+cd "$ROOT"
+if [ ! -f package.json ]; then
+  npm init -y >/dev/null
+  npm pkg set type="module" >/dev/null
+fi
+
+# Always enforce our scripts (safe to overwrite)
+npm pkg set scripts.convert="node tools/md-to-xhtml.mjs"      >/dev/null
+npm pkg set scripts.qa="node tools/qa-check.mjs"              >/dev/null
+npm pkg set scripts.canvas="node tools/make-canvas.mjs"       >/dev/null
+npm pkg set scripts.opf="node tools/make-opf-and-toc.mjs"     >/dev/null
+
+# 3) Drop skeleton tool files if absent (keeps your real ones if they exist)
+touch "$TOOLS/md-to-xhtml.mjs" \
+      "$TOOLS/qa-check.mjs" \
+      "$TOOLS/make-canvas.mjs" \
+      "$TOOLS/make-opf-and-toc.mjs"
+
+# 4) Write dependencies directly into package.json (deterministic)
+#    Using pkg set avoids partial installs that can corrupt the ideal tree.
+npm pkg set dependencies.markdown-it="^14.1.0"               >/dev/null
+npm pkg set dependencies.markdown-it-footnote="^3.0.3"       >/dev/null
+npm pkg set dependencies.markdown-it-deflist="^2.1.0"        >/dev/null
+npm pkg set dependencies.jsdom="^24.0.0"                     >/dev/null
+npm pkg set dependencies.yaml="^2.5.0"                       >/dev/null
+npm pkg set dependencies.commander="^12.1.0"                 >/dev/null
+npm pkg set dependencies.fast-glob="^3.3.2"                  >/dev/null
+npm pkg set dependencies.prettier="^3.3.3"                   >/dev/null
+
+# 5) Thorough npm state reset (prevents "Tracker 'idealTree' already exists")
+#    - kill stray npm/node pids that might hold a lock
+#    - clear local tree & global cache
+#    - then perform a clean install
+if pgrep -fa "node .*/npm" >/dev/null 2>&1; then
+  echo "Found stray npm processes; terminating to avoid lock/idealTree issues..."
+  pkill -f "node .*/npm" || true
+  sleep 1
+fi
+
+rm -rf node_modules package-lock.json
+npm cache clean --force >/dev/null 2>&1 || true
+
+# Use CI for a clean, deterministic install; ignore lifecycle scripts
+npm ci --ignore-scripts --no-audit --no-fund --silent
+
+# 6) Golden chapter (if present) → templates
+GOLDEN_SRC="$OEBPS/chapters/9-Chapter-I-Unveiling-Your-Creative-Odyssey.xhtml"
+GOLDEN_DST="$TEMPLATES/golden-chapter.xhtml"
+if [ -f "$GOLDEN_SRC" ]; then
+  cp -f "$GOLDEN_SRC" "$GOLDEN_DST"
+  echo "Copied golden chapter → $GOLDEN_DST"
+else
+  echo "NOTE: Put your final Chapter 1 XHTML at:"
+  echo "  $GOLDEN_SRC"
+  echo "Then re-run this setup to copy it into templates."
+fi
+
+# 7) Verify core assets exist (fail fast with helpful message)
+need() {
+  local p="$1"
+  if [ ! -f "$p" ]; then
+    echo "MISSING: $p"
+    MISSING=1
+  fi
+}
+MISSING=0
+need "$OEBPS/styles/style.css"
+need "$OEBPS/styles/fonts.css"
+need "$OEBPS/images/brushstroke.JPEG"
+# If your closing image uses a different extension/case, update the XHTML accordingly:
+# need "$OEBPS/images/chapter-i-quote.JPEG"
+
+if [ $MISSING -ne 0 ]; then
+  echo "Some required assets are missing. Add them, then re-run this setup."
+  exit 1
+fi
+
+# 8) Friendly summary
+cat <<'TXT'
+
+✅ Update complete.
+
+Key locations:
+- Markdown inputs:        /OEBPS/chapters_src/
+- XHTML outputs:          /OEBPS/chapters/
+- Golden reference:       /tools/templates/golden-chapter.xhtml
+- Images (brushstroke…):  /OEBPS/images/
+- CSS:                    /OEBPS/styles/
+
+Scripts you can run (after you add/keep your tool code):
+- npm run convert   # tools/md-to-xhtml.mjs
+- npm run qa        # tools/qa-check.mjs
+- npm run canvas    # tools/make-canvas.mjs
+- npm run opf       # tools/make-opf-and-toc.mjs
+TXT
