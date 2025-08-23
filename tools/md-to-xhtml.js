@@ -22,14 +22,14 @@
  * - If a required asset is missing, we STOP with a non-zero exit code.
  */
 
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
-const { JSDOM } = require('jsdom');
-const he = require('he');
-const fg = require('fast-glob');
-const MarkdownIt = require('markdown-it');
-const mdFootnote = require('markdown-it-footnote');
+import fs from 'fs';
+import path from 'path';
+import yaml from 'yaml';
+import { JSDOM } from 'jsdom';
+import he from 'he';
+import fg from 'fast-glob';
+import MarkdownIt from 'markdown-it';
+import mdFootnote from 'markdown-it-footnote';
 
 // ---------- helpers ----------
 function readFile(p) { return fs.readFileSync(p, 'utf8'); }
@@ -42,7 +42,7 @@ function splitFrontMatter(src) {
   const fmRaw = src.slice(3, end).trim();
   const body = src.slice(end + 4).replace(/^\s*\n/, '');
   let fm;
-  try { fm = yaml.load(fmRaw) || {}; } catch (e) { die('Invalid YAML front-matter: ' + e.message); }
+  try { fm = yaml.parse(fmRaw) || {}; } catch (e) { die('Invalid YAML front-matter: ' + e.message); }
   return { fm, body };
 }
 

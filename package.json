@@ -7,8 +7,12 @@
     "make:canvases": "node tools/make-canvases.mjs"
   },
   "dependencies": {
+    "fast-glob": "^3.3.2",
     "gray-matter": "^4.0.3",
+    "he": "^1.2.0",
     "jsdom": "^24.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-footnote": "^4.0.0",
     "marked": "^12.0.2",
     "yaml": "^2.4.5"
   }
