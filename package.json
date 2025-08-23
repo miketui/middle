@@ -4,12 +4,22 @@
   "type": "module",
   "scripts": {
     "convert:chapters": "node tools/convert-all.mjs",
-    "make:canvases": "node tools/make-canvases.mjs"
+    "make:canvases": "node tools/make-canvases.mjs",
+    "convert": "node tools/md-to-xhtml.js",
+    "qa": "node tools/qa-checks.js",
+    "canvas": "node tools/make-canvas.js",
+    "opf": "node tools/make-opf-and-toc.js"
   },
   "dependencies": {
+    "commander": "^14.0.0",
+    "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
-    "jsdom": "^24.0.0",
+    "jsdom": "^24.1.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-deflist": "^3.0.0",
+    "markdown-it-footnote": "^4.0.0",
     "marked": "^12.0.2",
-    "yaml": "^2.4.5"
+    "prettier": "^3.6.2",
+    "yaml": "^2.8.1"
   }
 }

@@ -1,0 +1,18 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.4
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/runner/work/middle1/middle1/.npmrc
+5 silly config load:file:/home/runner/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm pkg set scripts.convert=node tools/md-to-xhtml.js
+8 verbose argv "pkg" "set" "scripts.convert=node tools/md-to-xhtml.js"
+9 verbose logfile logs-max:10 dir:/home/runner/work/middle1/middle1/.npm-logs/2025-08-23T15_47_26_397Z-
+10 verbose logfile /home/runner/work/middle1/middle1/.npm-logs/2025-08-23T15_47_26_397Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /home/runner/work/middle1/middle1
+13 verbose os Linux 6.11.0-1018-azure
+14 verbose node v20.19.4
+15 verbose npm  v10.8.2
+16 verbose exit 0
+17 info ok

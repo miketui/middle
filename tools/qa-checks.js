@@ -10,10 +10,10 @@
  *   npm i jsdom fast-glob he
  */
 
-const fs = require('fs');
-const path = require('path');
-const { JSDOM } = require('jsdom');
-const fg = require('fast-glob');
+import fs from 'fs';
+import path from 'path';
+import { JSDOM } from 'jsdom';
+import fg from 'fast-glob';
 
 const args = process.argv.slice(2);
 const globs = args.filter(a => !a.startsWith('--'));
