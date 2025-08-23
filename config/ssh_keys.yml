@@ -1,0 +1,20 @@
+---
+# SSH Keys Configuration
+# This file manages SSH public keys for authentication
+
+ssh_keys:
+  - title: "Blink iPhone"
+    type: "Authentication Key" 
+    key_type: "ssh-ed25519"
+    public_key: "AAAAC3NzaC1lZDI1NTE5AAAAIH3M5pFd7KVXatxwrxuqY1lEc2PfPweAsYAO66pGiPVC"
+    user: "user@iphone"
+    added_date: "2024-08-23"
+    purpose: "iPhone device authentication"
+    
+# Configuration for SSH access
+ssh_config:
+  port: 22
+  protocol: 2
+  permit_root_login: false
+  password_authentication: false
+  pubkey_authentication: true

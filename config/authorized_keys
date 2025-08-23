@@ -1,0 +1,5 @@
+# SSH Public Keys for Authentication
+# Format: ssh-keytype base64-encoded-key comment
+
+# Blink iPhone - Authentication Key
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH3M5pFd7KVXatxwrxuqY1lEc2PfPweAsYAO66pGiPVC user@iphone
