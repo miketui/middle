@@ -269,6 +269,31 @@ for (const name of mdFiles) {
     : "";
   out = out.replace(/{{#IntroParagraphs}}[\s\S]*?{{\/IntroParagraphs}}/, introHtml);
 
+  // Handle conditional sections for QuizHTML, WorksheetHTML, AsideEndnotesHTML, and MasterEndnotesHTML
+  if (quizHtml) {
+    out = out.replace(/{{#QuizHTML}}([\s\S]*?){{\/QuizHTML}}/, '$1');
+  } else {
+    out = out.replace(/{{#QuizHTML}}[\s\S]*?{{\/QuizHTML}}/g, '');
+  }
+
+  if (worksheetHtml) {
+    out = out.replace(/{{#WorksheetHTML}}([\s\S]*?){{\/WorksheetHTML}}/, '$1');
+  } else {
+    out = out.replace(/{{#WorksheetHTML}}[\s\S]*?{{\/WorksheetHTML}}/g, '');
+  }
+
+  if (asideNotes) {
+    out = out.replace(/{{#AsideEndnotesHTML}}([\s\S]*?){{\/AsideEndnotesHTML}}/, '$1');
+  } else {
+    out = out.replace(/{{#AsideEndnotesHTML}}[\s\S]*?{{\/AsideEndnotesHTML}}/g, '');
+  }
+
+  if (masterNotes) {
+    out = out.replace(/{{#MasterEndnotesHTML}}([\s\S]*?){{\/MasterEndnotesHTML}}/, '$1');
+  } else {
+    out = out.replace(/{{#MasterEndnotesHTML}}[\s\S]*?{{\/MasterEndnotesHTML}}/g, '');
+  }
+
   // Ensure images point to ../images and preserve case
   out = await (async () => {
     const dom = new JSDOM(out);
