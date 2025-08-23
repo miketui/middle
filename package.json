@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "convert:chapters": "node tools/convert-all.mjs",
-    "make:canvases": "node tools/make-canvases.mjs"
+    "make:canvases": "node tools/make-canvases.mjs",
+    "verify:matching": "./tools/verify-file-matching.sh"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
