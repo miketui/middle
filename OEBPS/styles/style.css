@@ -225,6 +225,30 @@ li { margin-bottom: 0.5em; line-height: 1.5; }
 .chapter-number-pill { display: inline-block; background: linear-gradient(45deg, #1797a6, #26a69a); border-radius: 999px; padding: 0.75rem 1.25rem; box-shadow: var(--shadow-medium); }
 .chapter-number-text { font-family: 'Cinzel Decorative', serif; font-size: 1.5rem; color: #ffffff; letter-spacing: 0.08em; }
 
+/* Brushstroke and Chapter Number Positioning */
+.chapter-number-brush { 
+  position: relative; 
+  display: inline-block; 
+  margin-bottom: 2rem; 
+}
+.brushstroke-img { 
+  width: 120px; 
+  height: auto; 
+  display: block; 
+}
+.chapter-number-brush .chapter-number-text { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-family: 'Cinzel Decorative', serif; 
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  color: var(--white); 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+  letter-spacing: 0.05em; 
+}
+
 .chapter-title-stack { display: flex; align-items: flex-start; gap: 1.5rem; margin: 2rem 0; }
 .chapter-title-vertical { border-left: 4px solid var(--accent-color); padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.25rem; }
 .chapter-title-word { font-size: 2rem; color: var(--accent-color); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1; text-align: left; }
