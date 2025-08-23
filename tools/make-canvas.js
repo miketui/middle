@@ -9,8 +9,8 @@
  * This does NOT ship in EPUB; it's for browser QA only.
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const args = Object.fromEntries(process.argv.slice(2).map((v,i,arr)=>{
   if (!v.startsWith('--')) return [];

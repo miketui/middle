@@ -22,14 +22,14 @@
  * - If a required asset is missing, we STOP with a non-zero exit code.
  */
 
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
-const { JSDOM } = require('jsdom');
-const he = require('he');
-const fg = require('fast-glob');
-const MarkdownIt = require('markdown-it');
-const mdFootnote = require('markdown-it-footnote');
+import fs from 'fs';
+import path from 'path';
+import yaml from 'js-yaml';
+import { JSDOM } from 'jsdom';
+import he from 'he';
+import fg from 'fast-glob';
+import MarkdownIt from 'markdown-it';
+import mdFootnote from 'markdown-it-footnote';
 
 // ---------- helpers ----------
 function readFile(p) { return fs.readFileSync(p, 'utf8'); }
